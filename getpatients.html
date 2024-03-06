@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Patients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Get Patients</h1>
+    <div>
+        <button id="fetchAllPatients">Fetch All Patients</button>
+        <button id="fetchSixMonthsOldPatients">Fetch Six Months Old Patients</button>
+        <button id="fetchOneYearOldPatients">Fetch One Year Old Patients</button>
+    </div>
+    <button id="fetchDataBtn">Fetch Data</button>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Serial No</th>
+                <th>UHID</th>
+                <th>Patient Name</th>
+                <th>Investigation</th>
+                <th>Bill</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+            <!-- Table rows will be added dynamically -->
+        </tbody>
+    </table>
+    <script src="patients.js"></script>
+</body>
+</html>
